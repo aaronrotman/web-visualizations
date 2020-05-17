@@ -4,10 +4,10 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
     <title>Maximum Temperature</title>
   </head>
   <body>
@@ -40,41 +40,60 @@
           </ul>
         </div>
     </nav>
-    <!-- Visualizations Page -->
+    <!--  Max Temperature Page -->
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12">
-          <h1 class="text-center">Max Temperature</h1>
-          <p>In this section we compared latitude to maximum teperature. The plot shows temperatures increasing as one approaches the equator and decreasing as one moves farther away from the equator.</p><hr>
+        <!-- Summary Section -->
+        <div class="jumbotron jumbotron-fluid col-xs-12 col-md-8">
+          <div class="container-fluid">
+            <h1 class="text-center">Max Temperature</h1><hr>
+          </div>
+          <div class="container-fluid">
+            <a href="./max_temp.html">
+              <img src="Resources/assets/images/Fig1.png"class="img-fluid text-center">
+            </a>
+          </div>
+          <div class="container-fluid">
+            <p>In this section we compared latitude to maximum teperature. The plot shows temperatures increasing as one approaches the equator and decreasing as one moves farther away from the equator.</p>
+          </div>
         </div>
-      </div>
-  
-      <div class="row">
-        <div class="col-xs-12 col-md-6">
-          <a href="./max_temp.html">
-            <img src="Resources/assets/images/Fig1.png"class="img-fluid border border-dark">
-          </a>
-        </div>
-        <div class="col-xs-12 col-md-6">
-          <a href="./humidity.html">
-            <img src="Resources/assets/images/Fig2.png" class="img-fluid">
-          </a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12 col-md-6">
-          <a href="./cloudiness.html">
-            <img src="Resources/assets/images/Fig3.png" class="img-fluid">
-          </a>
-        </div>
-        <div class="col-xs-12 col-md-6">
-          <a href="./wind_speed.html">
-            <img src="Resources/assets/images/Fig4.png" class="img-fluid">
-          </a>
+        
+        <!-- Visualizations Section -->
+        <div class="jumbotron jumbotron-fluid col-xs-12 col-md-4">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">
+                <h1 class="text-center">Visualizations</h1><hr>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-md-6">
+                <a href="./max_temp.html">
+                  <img src="Resources/assets/images/Fig1.png"class="img-fluid border border-dark">
+                </a>
+              </div>
+              <div class="col-xs-12 col-md-6">
+                <a href="./humidity.html">
+                  <img src="Resources/assets/images/Fig2.png" class="img-fluid">
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-md-6">
+                <a href="./cloudiness.html">
+                  <img src="Resources/assets/images/Fig3.png" class="img-fluid">
+                </a>
+              </div>
+              <div class="col-xs-12 col-md-6">
+                <a href="./wind_speed.html">
+                  <img src="Resources/assets/images/Fig4.png" class="img-fluid">
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

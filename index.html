@@ -4,7 +4,6 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!-- Custom CSS -->
@@ -42,52 +41,56 @@
           </ul>
         </div>
     </nav>
+    
     <!-- Home Page -->
     <div class="container-fluid">
       <div class="row">
-        <div class="col">
-          
+        <!-- Summary Section -->
+        <div class="jumbotron jumbotron-fluid col-xs-12 col-md-8">
+          <div class="container-fluid">
+            <h1 class="text-center">Summary: Latitude vs. X</h1><hr>
+            <p>For this project we randomly selected over 500 cities and compared their latitude to the following variables: maximum temperature, humidity, cloud cover and wind speed. The data from this proect was later used to narrow down the list of cities to less than ten cities that met all of the ideal weather conditions we selected.</p>
+            <p> Cities were selected by randomly generating latitude and longitude values. We then used the Citipy library to find the nearest city to the randomly generated coordinates. We used the city names to make  a series of API calls using the OpenWeatherMap API to retrieve weather data for each city.
+              We used Matplotlib and Pandas to generate plots of the data.</p>
+          </div>
         </div>
-        <div class="col-xs-12 col-md-12">
-          <h1 class="text-center">Summary: Latitude vs. X</h1>
-          <p>For this project we randomly selected over 500 cities and compared their latitude to the following variables: maximum temperature, humidity, cloud cover and wind speed. We plotted each of these comparisons.</p><hr>
+        <!-- Visualizations Section -->
+        <div class="jumbotron jumbotron-fluid col-xs-12 col-md-4">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">
+                <h1 class="text-center">Visualizations</h1><hr>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-md-6">
+                <a href="./max_temp.html">
+                  <img src="Resources/assets/images/Fig1.png"class="img-fluid">
+                </a>
+              </div>
+              <div class="col-xs-12 col-md-6">
+                <a href="./humidity.html">
+                  <img src="Resources/assets/images/Fig2.png" class="img-fluid">
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-md-6">
+                <a href="./cloudiness.html">
+                  <img src="Resources/assets/images/Fig3.png" class="img-fluid">
+                </a>
+              </div>
+              <div class="col-xs-12 col-md-6">
+                <a href="./wind_speed.html">
+                  <img src="Resources/assets/images/Fig4.png" class="img-fluid">
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- Visualizations Page -->
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <h1 class="text-center">Visualizations</h1><hr>
-        </div>
-      </div>
-  
-      <div class="row">
-        <div class="col-xs-12 col-md-6">
-          <a href="./max_temp.html">
-            <img src="Resources/assets/images/Fig1.png"class="img-fluid">
-          </a>
-        </div>
-        <div class="col-xs-12 col-md-6">
-          <a href="./humidity.html">
-            <img src="Resources/assets/images/Fig2.png" class="img-fluid">
-          </a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12 col-md-6">
-          <a href="./cloudiness.html">
-            <img src="Resources/assets/images/Fig3.png" class="img-fluid">
-          </a>
-        </div>
-        <div class="col-xs-12 col-md-6">
-          <a href="./wind_speed.html">
-            <img src="Resources/assets/images/Fig4.png" class="img-fluid">
-          </a>
-        </div>
-      </div>
-    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -96,3 +99,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   </body>
 </html>
+
